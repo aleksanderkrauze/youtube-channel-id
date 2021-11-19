@@ -1,7 +1,7 @@
 #!/bin/sh
 
 [ -z "$1" ] && \
-	echo "Please provide youtube's channel url." && \
+	echo 1>&2 "Please provide youtube's channel url." && \
 	exit 1
 
 CHANNEL_ID=$(sh ./get_yt_channel_id.sh $1)
